@@ -1,0 +1,11 @@
+{
+  "name": "express-api-to-postman",
+  "version": "1.0.0",
+  "description": "Automated Postman collection creation from Express Node APIs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Habiba Faisal",
+  "license": "ISC"
+}

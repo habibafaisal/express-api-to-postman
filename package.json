@@ -4,6 +4,10 @@
   "description": "Automated Postman collection creation from Express Node APIs.",
   "main": "index.js",
   "type": "module",
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/habibafaisal/express-api-to-postman.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

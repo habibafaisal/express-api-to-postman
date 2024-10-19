@@ -3,9 +3,22 @@
   "version": "1.0.0",
   "description": "Automated Postman collection creation from Express Node APIs.",
   "main": "index.js",
+  "type": "module", 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+   "keywords": [
+    "express",
+    "nodejs",
+    "postman",
+    "api",
+    "collection",
+    "generator",
+    "automation",
+    "rest",
+    "testing",
+    "documentation"
+  ],
   "author": "Habiba Faisal",
   "license": "ISC"
 }

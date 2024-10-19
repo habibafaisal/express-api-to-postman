@@ -2,7 +2,6 @@ import path from "path";
 import fs from "fs";
 import { pathToFileURL } from "url";
 
-// Clean up route paths
 function cleanRoutePath(routePath) {
   return routePath
     .replace(/\\\//g, "/")
@@ -12,7 +11,6 @@ function cleanRoutePath(routePath) {
     .replace(/\/{2,}/g, "/");
 }
 
-// Extract routes recursively
 function getRoutes(stack, parentPath = "") {
   let routes = [];
 
@@ -33,7 +31,6 @@ function getRoutes(stack, parentPath = "") {
   return routes;
 }
 
-// Generate Postman collection
 function generatePostmanCollection(routes, collectionName) {
   const collection = {
     info: {
@@ -60,7 +57,6 @@ function generatePostmanCollection(routes, collectionName) {
   return collection;
 }
 
-// Load the server file and extract routes
 export function extractRoutesFromServer({ serverFilePath, collectionName }) {
   const fileUrl = pathToFileURL(path.resolve(serverFilePath)).href;
 

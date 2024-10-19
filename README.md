@@ -5,6 +5,8 @@ express-api-to-postman is a Node.js package that automates the generation of a P
 
 
 
+
+
 ## Features
 
 - Automatically extracts all routes from an Express app
@@ -20,6 +22,16 @@ Install express-api-to-postman with npm
 
 ```bash
   npm i express-api-to-postman
+```
+    
+## Usage
+
+
+After installing the package, you can run it using the following command:
+
+```bash
+  express-api-to-postman <serverFilePath> <collectionName>
+
 ```
     
 ## Linkedin

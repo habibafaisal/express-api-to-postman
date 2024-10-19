@@ -1,6 +1,6 @@
 {
   "name": "express-api-to-postman",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Automated Postman collection creation from Express Node APIs.",
   "main": "index.js",
   "type": "module",

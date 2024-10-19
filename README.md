@@ -33,6 +33,8 @@ After installing the package, you can run it using the following command:
   express-api-to-postman <serverFilePath> <collectionName>
 
 ```
+
+Once the command is executed, a Postman collection file will be created, which can be imported into Postman for testing.
     
 ## Linkedin
 

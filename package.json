@@ -1,11 +1,14 @@
 {
   "name": "express-api-to-postman",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automated Postman collection creation from Express Node APIs.",
   "main": "index.js",
   "type": "module", 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+   "bin": {
+    "express-api-to-postman": "./src/cli.js"
   },
    "keywords": [
     "express",

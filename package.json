@@ -2,14 +2,14 @@
   "name": "express-api-to-postman",
   "version": "1.0.7",
   "description": "Automated Postman collection creation from Express Node APIs.",
-  "main": "index.js",
-  "type": "module",
+  "main": "dist/routeExtractor.js",
+  "types": "dist/routeExtractor.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/habibafaisal/express-api-to-postman.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
     "express-api-to-postman": "./src/cli.js"
@@ -27,5 +27,10 @@
     "documentation"
   ],
   "author": "Habiba Faisal",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.0.7",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "name": "express-api-to-postman",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "Automated Postman collection creation from Express Node APIs.",
   "main": "dist/routeExtractor.js",
   "types": "dist/routeExtractor.d.ts",

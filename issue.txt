@@ -1,0 +1,23 @@
+title:	Error when running 1.10 version
+state:	OPEN
+author:	poman31
+labels:	ai-fix
+comments:	0
+assignees:	habibafaisal
+projects:	
+milestone:	
+number:	2
+--
+I love the idea of this project and find it very useful.   I had to work around an error when executing this module.  
+
+node:internal/modules/typescript:183
+    throw new ERR_UNSUPPORTED_NODE_MODULES_TYPE_STRIPPING(filename);
+          ^
+
+Error [ERR_UNSUPPORTED_NODE_MODULES_TYPE_STRIPPING]: Stripping types is currently unsupported for files under node_modules, for "<redacted>\node_modules\express-api-to-postman\routeExtractor.ts"
+
+I am using Node v24.12.0 and this command:  `express-api-to-postman ./dist/server.js backend-api`
+It appears Node 24 does not yet support TS files within node_modules.  
+
+I tried a few things and managed to get the module executing by manually updating the  `src/cli.js` file to import statement to `import { extractRoutesFromServer } from "../dist/routeExtractor.js";`
+

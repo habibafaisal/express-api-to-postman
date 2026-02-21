@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { extractRoutesFromServer } from "../routeExtractor.ts";
+import { extractRoutesFromServer } from "../dist/routeExtractor.js";
 
 const args = process.argv.slice(2);
 
